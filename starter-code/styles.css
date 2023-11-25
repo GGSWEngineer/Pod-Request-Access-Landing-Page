@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 375px;
+  height: 667px;
+  background: url("assets/mobile/image-host.jpg");
+  padding: 3.88rem 1.5rem 5.87rem;
+}
+
+.container header {
+  margin-bottom: 3.56rem;
+}
+
+.text-container h1 {
+  margin-bottom: 1rem;
+  color: #54e6af;
+  font-size: 1.625rem;
+  font-weight: 100;
+  line-height: 2.375rem; /* 146.154% */
+  text-transform: uppercase;
+}
+
+.container h1 span {
+  color: #fff;
+}
+
+.text-container p {
+  margin-bottom: 2.06rem;
+  color: #c2cbe5;
+  font-size: 0.9375rem;
+  font-weight: 100;
+  line-height: 1.5625rem; /* 166.667% */
+}
+
+.text-container figure {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.spotify-logo {
+  width: 56px;
+  height: 17px;
+}
+
+.apple-podcast-logo {
+  width: 45px;
+  height: 17px;
+}
+
+.google-podcast-logo {
+  width: 73px;
+  height: 11px;
+}
+
+.pocket-casts-logo {
+  width: 77px;
+  height: 15px;
+}
+
+#emailInput {
+  width: 100%;
+  border-radius: 28px;
+  font-family: Chivo;
+  background: #2c344b;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.75rem; /* 200% */
+  padding: 0.56rem 0 0.56rem 2rem;
+  border: none;
+}
+
+form input:focus {
+  outline: none;
+}
+
+#emailInput::placeholder {
+  color: #fff;
+  font-family: Chivo;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem; /* 200% */
+  opacity: 0.5;
+}
+
+form button {
+  width: 100%;
+  height: 46px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 28px;
+  background: #54e6af;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.5);
+  color: #121725;
+  font-family: Chivo;
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.75rem; /* 200% */
+  border: none;
+}
+
+form button:hover {
+    cursor: pointer;
+}
