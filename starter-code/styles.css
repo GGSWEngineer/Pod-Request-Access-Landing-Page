@@ -26,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  /* overflow: hidden; */
 }
 
 .container header {
@@ -123,8 +124,28 @@ form button {
   border: none;
 }
 
-form button:hover {
+form button:hover,
+form button:active {
   cursor: pointer;
+  background: #b3ffe2;
+}
+
+.error-message,
+.success-message {
+  position: absolute;
+  display: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+  top: 67%;
+  left: 12%;
+}
+
+.error-message {
+  color: #fb3e3e;
+}
+
+.success-message {
+  color: #4caf50; /* This is a shade of green */
 }
 
 .pattern-dots {
@@ -135,11 +156,12 @@ form button:hover {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  opacity: 0.7993;
-  background: #54e6af;
   mix-blend-mode: multiply;
+  background-color:#54E6AF;
+  opacity: .8;
+  z-index: -1;
 }
+
 
 @media (min-width: 768px) {
   .container {
@@ -151,7 +173,7 @@ form button:hover {
   .container header {
     margin-bottom: 9.5rem;
   }
-  
+
   .background-container {
     background: #121725;
   }
@@ -168,7 +190,6 @@ form button:hover {
     font-size: 3rem;
     font-weight: 100;
     line-height: 3.5rem; /* 116.667% */
-
   }
 
   .text-container p {
@@ -181,7 +202,7 @@ form button:hover {
   .text-container figure.logos-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     order: 1;
     max-width: 536px;
   }
@@ -199,10 +220,17 @@ form button:hover {
   form button {
     position: absolute;
     top: 50%;
-    left: 54%;
+    left: 53.5%;
     transform: translate(-50%, -50%);
     max-width: 162px;
   }
+
+  .error-message,
+  .success-message {
+    top: 84%;
+    left: 4%;
+  }
+
   .spotify-logo {
     width: 96px;
     height: 29px;
@@ -226,7 +254,7 @@ form button:hover {
     display: block;
     position: absolute;
     bottom: -49.2%;
-    left:0;
+    left: 0;
   }
 
   .image-host {
@@ -238,5 +266,49 @@ form button:hover {
     z-index: -1;
     mix-blend-mode: normal;
     opacity: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 1440px;
+    height: 900px;
+    padding: 6.38rem 0 8.13rem 10.31rem;
+  }
+  .container header {
+    margin-bottom: 6.44rem;
+  }
+  .text-container {
+    padding-top: 5.5rem;
+    width: 723px;
+    max-height: 509px;
+    position: relative;
+  }
+  .text-container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3.25rem;
+    font-weight: 100;
+    line-height: 3.875rem; /* 119.231% */
+  }
+
+  .background-container {
+    max-width: 723px;
+  }
+
+  form button {
+    left: 47%;
+    transform: translate(-50%, -50%);
+    max-width: 162px;
+  }
+  .pattern-dots {
+    bottom: -10%;
+    left: 144%;
+  }
+
+  .image-host {
+    top: -26%;
+    left: 53%;
+    width: 888px;
+    height: 640px;
   }
 }
