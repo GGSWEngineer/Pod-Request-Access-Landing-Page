@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/GGSWEngineer/Pod-Request-Access-Landing-Page
+- Live Site URL: https://ggswengineer.github.io/Pod-Request-Access-Landing-Page/
 
 ## My process
 
@@ -55,5 +55,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@GGSWEngineer](https://www.frontendmentor.io/profile/GGSWEngineer)
+- LinkedIn - [Gerardo Garcia](www.linkedin.com/in/gerardo-garcia-19a794275)
