@@ -51,14 +51,11 @@ function validateForm(event) {
   
     // If all validation passes, you can submit the form programmatically
     document.querySelector("#myForm").submit();
+    window.location.href = "index.html";
+    alert("You successfully submitted your email")
   }
   
   document.querySelector("#myForm").addEventListener("submit", validateForm);
-
-
-
-
-
 
 
 
